@@ -112,6 +112,35 @@ h5{
   text-align: center;
   font-size: 40px;
 }
+.heart {
+  font-size:  100px;
+  text-align: center;
+  color: red;
+  animation: beat 1s infinite;
+}
+@keyframes beat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(1.1);
+    animation-timing-function: ease-in;
+  }
+  15% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: scale(1.05);
+    animation-timing-function: ease-in;
+  }
+  35% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 @media only screen and (max-width: 600px) {
   .col-2{
 	color: white;
